@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <div class="big_box">
+    <div class="container">
+      <div class="text_box">
+        <h2>Learn to code by watching others</h2>
+        <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="form_box">
+        <div class="try_box">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          <form action="" method="git" target="_blank">
+
+            <input type="text" placeholder="First Name" name="First Name" />
+            <img src="images/icon-error.svg" id="First" class="hide" alt="pic" />
+            <small id="small_First" class="hide">Please Write Your First Name</small>
+
+            <input type="text" placeholder="Last Name" name="Last Name" />
+            <img src="images/icon-error.svg" id="Last" class="hide" alt="pic" />
+            <small id="small_Last" class="hide">Please Write Your Last Name</small>
+
+            <input type="text" placeholder="Email Address" name="Email Address" />
+            <img src="images/icon-error.svg" id="Email" class="hide" alt="pic" />
+            <small id="small_Email" class="hide">Please Provide a valid email(has @)</small>
+
+            <input type="password" placeholder="password" name="password" />
+            <img src="images/icon-error.svg" id="password" class="hide" alt="pic" />
+            <small id="small_password" class="hide">Please Write a Password greater than 5 und less than 20</small>
+
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" />
+            <p>By clicking the button, you are agreeing to our<a href="#">Terms and Services</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
