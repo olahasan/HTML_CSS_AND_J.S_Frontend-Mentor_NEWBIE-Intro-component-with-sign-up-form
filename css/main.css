@@ -1,290 +1,289 @@
 :root {
-    --Red: hsl(0, 100%, 74%);
-    --Green: hsl(154, 59%, 51%);
-    --Blue: hsl(248, 32%, 49%);
-    --Dark-Blue: hsl(249, 10%, 26%);
-    --Grayish-Blue: hsl(246, 25%, 77%);
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--Red);
-    background-image: url(../images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Red);
+  background-image: url(../images/bg-intro-desktop.png);
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Small */
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+  .container {
+    width: 750px;
+  }
 }
 
 /* Medium */
 @media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
+  .container {
+    width: 970px;
+  }
 }
 
 /* Large */
 @media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
+  .container {
+    width: 1170px;
+  }
 }
-
 
 /* start */
 .big_box {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .big_box .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .big_box .container .text_box {
-    flex-basis: 48%;
+  flex-basis: 48%;
 }
 
 .big_box .container .text_box h2 {
-    color: white;
-    font-size: 47px;
-    font-weight: 700;
-    line-height: 1.2;
-    width: 80%;
-    margin-bottom: 25px;
+  color: white;
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 1.2;
+  width: 80%;
+  margin-bottom: 25px;
 }
 
 .big_box .container .text_box p {
-    color: white;
+  color: white;
 }
 
 .big_box .container .form_box {
-    flex-basis: 48%;
+  flex-basis: 48%;
 }
 
 .big_box .container .form_box .try_box {
-    padding: 10px;
+  padding: 10px;
 }
 
 .big_box .container .form_box .try_box p:first-child {
-    background-color: var(--Blue);
-    margin-bottom: 20px;
-    padding: 10px;
-    text-align: center;
-    font-size: 10px;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0px 7px 3px 0px hsl(249deg 10% 26% / 82%);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  background-color: var(--Blue);
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 7px 3px 0px hsl(249deg 10% 26% / 82%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .big_box .container .form_box .try_box p:first-child span {
-    font-size: 15px;
-    word-spacing: -1px;
+  font-size: 15px;
+  word-spacing: -1px;
 }
 
 .big_box .container .form_box .try_box form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 0px 7px 3px 0px hsl(249deg 10% 26% / 32%);
-    position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 7px 3px 0px hsl(249deg 10% 26% / 32%);
+  position: relative;
 }
 
 .big_box .container .form_box .try_box form input {
-    display: block;
-    width: 100%;
-    padding: 15px 0 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border: 1px solid var(--Grayish-Blue);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--Grayish-Blue);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .big_box .container .form_box .try_box form input:focus {
-    border: 3px solid hsl(249deg 10% 26% / 30%);
-    outline: none;
-    caret-color: var(--Dark-Blue);
+  border: 3px solid hsl(249deg 10% 26% / 30%);
+  outline: none;
+  caret-color: var(--Dark-Blue);
 }
 
 .big_box .container .form_box .try_box form img {
-    position: absolute;
-    width: 15px;
+  position: absolute;
+  width: 15px;
 }
 
 img#First {
-    right: 27px;
-    top: 30px;
+  right: 27px;
+  top: 30px;
 }
 
 img#Last {
-    right: 27px;
-    top: 92px;
+  right: 27px;
+  top: 92px;
 }
 
 img#Email {
-    top: 154px;
-    right: 27px;
+  top: 154px;
+  right: 27px;
 }
 
 img#password {
-    top: 217px;
-    right: 27px;
+  top: 217px;
+  right: 27px;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .big_box .container .form_box .try_box form small#small_First {
-    color: var(--Red);
-    position: absolute;
-    right: 45px;
-    top: 33px;
-    font-size: 8px;
+  color: var(--Red);
+  position: absolute;
+  right: 45px;
+  top: 33px;
+  font-size: 8px;
 }
 
 .big_box .container .form_box .try_box form small#small_Last {
-    color: var(--Red);
-    position: absolute;
-    right: 45px;
-    top: 95px;
-    font-size: 8px;
+  color: var(--Red);
+  position: absolute;
+  right: 45px;
+  top: 95px;
+  font-size: 8px;
 }
 
 .big_box .container .form_box .try_box form small#small_Email {
-    color: var(--Red);
-    position: absolute;
-    right: 45px;
-    top: 157px;
-    font-size: 8px;
+  color: var(--Red);
+  position: absolute;
+  right: 45px;
+  top: 157px;
+  font-size: 8px;
 }
 
 .big_box .container .form_box .try_box form small#small_password {
-    color: var(--Red);
-    position: absolute;
-    right: 44px;
-    top: 220px;
-    font-size: 6.5px;
+  color: var(--Red);
+  position: absolute;
+  right: 44px;
+  top: 220px;
+  font-size: 6.5px;
 }
 
 .big_box .container .form_box .try_box form input[type="submit"] {
-    color: white;
-    background-color: var(--Green);
+  color: white;
+  background-color: var(--Green);
 }
 
 .big_box .container .form_box .try_box form p {
-    FONT-SIZE: 10px;
-    text-align: center;
-    color: var(--Grayish-Blue);
+  font-size: 10px;
+  text-align: center;
+  color: var(--Grayish-Blue);
 }
 
 .big_box .container .form_box .try_box form p a {
-    text-decoration: none;
-    color: var(--Red);
-    font-weight: bold;
+  text-decoration: none;
+  color: var(--Red);
+  font-weight: bold;
 }
 
-@media(max-width:767px) {
-    body {
-        background-image: url(../images/bg-intro-mobile.png);
-    }
+@media (max-width: 767px) {
+  body {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
 
-    .big_box .container {
-        flex-direction: column;
-    }
+  .big_box .container {
+    flex-direction: column;
+  }
 
-    .big_box .container .text_box {
-        text-align: center;
-        padding: 20px;
-        margin-bottom: 50px;
-    }
+  .big_box .container .text_box {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
 
-    .big_box .container .text_box h2 {
-        width: 100%;
-        font-size: 34px;
-    }
+  .big_box .container .text_box h2 {
+    width: 100%;
+    font-size: 34px;
+  }
 
-    .big_box .container {
-        padding: 0;
-    }
+  .big_box .container {
+    padding: 0;
+  }
 
-    .big_box .container .form_box .try_box form {
-        margin-bottom: 50px;
-        display: block;
-    }
+  .big_box .container .form_box .try_box form {
+    margin-bottom: 50px;
+    display: block;
+  }
 
-    .big_box .container .form_box .try_box p:first-child {
-        padding: 35px;
-    }
+  .big_box .container .form_box .try_box p:first-child {
+    padding: 35px;
+  }
 
-    .big_box .container .form_box .try_box p:first-child span {
-        font-size: 22px;
-        word-spacing: -1px;
-    }
+  .big_box .container .form_box .try_box p:first-child span {
+    font-size: 22px;
+    word-spacing: -1px;
+  }
 
-    .big_box .container .form_box .try_box form input {
-        padding: 27px 0 27px 20px;
-    }
+  .big_box .container .form_box .try_box form input {
+    padding: 27px 0 27px 20px;
+  }
 
-    .big_box .container .form_box .try_box form input[type="submit"] {
-        padding: 27px;
-    }
+  .big_box .container .form_box .try_box form input[type="submit"] {
+    padding: 27px;
+  }
 
-    .big_box .container .form_box .try_box form p {
-        FONT-SIZE: 14px;
-    }
+  .big_box .container .form_box .try_box form p {
+    font-size: 14px;
+  }
 
-    img#Last {
-        top: 116px;
-    }
+  img#Last {
+    top: 116px;
+  }
 
-    .big_box .container .form_box .try_box form small#small_Last {
-        top: 119px;
-    }
+  .big_box .container .form_box .try_box form small#small_Last {
+    top: 119px;
+  }
 
-    img#Email {
-        top: 200px;
-    }
+  img#Email {
+    top: 200px;
+  }
 
-    .big_box .container .form_box .try_box form small#small_Email {
-        top: 203px;
-    }
+  .big_box .container .form_box .try_box form small#small_Email {
+    top: 203px;
+  }
 
-    img#password {
-        top: 288px;
-    }
+  img#password {
+    top: 288px;
+  }
 
-    .big_box .container .form_box .try_box form small#small_password {
-        top: 292px;
-    }
+  .big_box .container .form_box .try_box form small#small_password {
+    top: 292px;
+  }
 }

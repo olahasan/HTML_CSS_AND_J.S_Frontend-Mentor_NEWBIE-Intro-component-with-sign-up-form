@@ -1,70 +1,65 @@
-let inputFirst = document.querySelector("[name='First Name']");
-let inputFirstImg = document.getElementById("First");
-let inputFirstSmall = document.getElementById("small_First");
-console.log(inputFirst);
-console.log(inputFirstImg);
-console.log(inputFirstSmall);
+document.addEventListener("DOMContentLoaded", () => {
+  const inputFirst = document.querySelector("[name='First Name']");
+  const inputFirstImg = document.getElementById("First");
+  const inputFirstSmall = document.getElementById("small_First");
 
+  const inputLast = document.querySelector("[name='Last Name']");
+  const inputLastImg = document.getElementById("Last");
+  const inputLastSmall = document.getElementById("small_Last");
 
-let inputLast = document.querySelector("[name='Last Name']");
-let inputLastImg = document.getElementById("Last");
-let inputLastSmall = document.getElementById("small_Last");
-console.log(inputLast);
-console.log(inputLastImg);
-console.log(inputLastSmall);
+  const inputEmail = document.querySelector("[name='Email Address']");
+  const inputEmailImg = document.getElementById("Email");
+  const inputEmailSmall = document.getElementById("small_Email");
 
+  const inputPassword = document.querySelector("[name='password']");
+  const inputPasswordImg = document.getElementById("password");
+  const inputPasswordSmall = document.getElementById("small_password");
 
-let inputEmail = document.querySelector("[name='Email Address']");
-let inputEmailImg = document.getElementById("Email");
-let inputEmailSmall = document.getElementById("small_Email");
-console.log(inputEmail);
-console.log(inputEmailImg);
-console.log(inputEmailSmall);
+  //   console.log(inputFirst, inputFirstImg, inputFirstSmall);
+  //   console.log(inputLast, inputLastImg, inputLastSmall);
+  //   console.log(inputEmail, inputEmailImg, inputEmailSmall);
+  //   console.log(inputPassword, inputPasswordImg, inputPasswordSmall);
 
+  document.forms[0].addEventListener("submit", (e) => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-let inputPassword = document.querySelector("[name='password']");
-let inputPasswordImg = document.getElementById("password");
-let inputPasswordSmall = document.getElementById("small_password");
-console.log(inputPassword);
-console.log(inputPasswordImg);
-console.log(inputPasswordSmall);
-
-
-
-
-document.forms[0].onsubmit = function (e) {
-    if (inputFirst.value === "") {
-        inputFirstImg.classList.remove("hide");
-        inputFirstSmall.classList.remove("hide");
-        e.preventDefault();
-    } else if (inputLast.value === "") {
-        inputLastImg.classList.remove("hide");
-        inputLastSmall.classList.remove("hide");
-        e.preventDefault();
-    } else if (!inputEmail.value.includes("@")) {
-        inputEmailImg.classList.remove("hide");
-        inputEmailSmall.classList.remove("hide");
-        e.preventDefault();
-    } else if (inputPassword.value.length <= 5 || inputPassword.value.length >= 20) {
-        inputPasswordImg.classList.remove("hide");
-        inputPasswordSmall.classList.remove("hide");
-        e.preventDefault();
+    if (inputFirst.value.trim() === "") {
+      inputFirstImg.classList.remove("hide");
+      inputFirstSmall.classList.remove("hide");
+      e.preventDefault();
+    } else if (inputLast.value.trim() === "") {
+      inputLastImg.classList.remove("hide");
+      inputLastSmall.classList.remove("hide");
+      e.preventDefault();
+    } else if (!emailPattern.test(inputEmail.value.trim())) {
+      inputEmailImg.classList.remove("hide");
+      inputEmailSmall.classList.remove("hide");
+      e.preventDefault();
+    } else if (
+      inputPassword.value.length <= 5 ||
+      inputPassword.value.length >= 20
+    ) {
+      inputPasswordImg.classList.remove("hide");
+      inputPasswordSmall.classList.remove("hide");
+      e.preventDefault();
     }
-}
-inputFirst.onclick = function () {
-    inputFirstImg.classList.add("hide");
-    inputFirstSmall.classList.add("hide");
-}
-inputLast.onclick = function () {
-    inputLastImg.classList.add("hide");
-    inputLastSmall.classList.add("hide");
-}
-inputEmail.onclick = function () {
-    inputEmailImg.classList.add("hide");
-    inputEmailSmall.classList.add("hide");
-}
-inputPassword.onclick = function () {
-    inputPasswordImg.classList.add("hide");
-    inputPasswordSmall.classList.add("hide");
-}
+  });
 
+  const hideError = (inputImg, inputSmall) => {
+    inputImg.classList.add("hide");
+    inputSmall.classList.add("hide");
+  };
+
+  inputFirst.addEventListener("click", () =>
+    hideError(inputFirstImg, inputFirstSmall)
+  );
+  inputLast.addEventListener("click", () =>
+    hideError(inputLastImg, inputLastSmall)
+  );
+  inputEmail.addEventListener("click", () =>
+    hideError(inputEmailImg, inputEmailSmall)
+  );
+  inputPassword.addEventListener("click", () =>
+    hideError(inputPasswordImg, inputPasswordSmall)
+  );
+});
